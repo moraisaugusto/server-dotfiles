@@ -39,7 +39,7 @@ noremap <space> :set hlsearch! hlsearch?<cr>
 "set invlist
 "set listchars=tab:▸\ ,eol:,trail:⋅,extends:❯,precedes:❮
 highlight SpecialKey ctermbg=none " make the highlighting of tabs less annoying
-set showbreak=↪
+set showbreak=¶
 nmap <leader>l :set list!<cr>
 
 " switch between current and last buffer

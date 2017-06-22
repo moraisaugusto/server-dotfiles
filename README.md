@@ -7,7 +7,7 @@ Dotfiles for Linux Server
 * Basic configs of VIM
  
 ### Requirements
-* lsb-release command
+* _lsb-release_,  _wget_ and _git_ commands
 * Python 3
 
 ### Instalation
@@ -16,7 +16,6 @@ bash -c "$(wget https://raw.githubusercontent.com/moraisaugusto/server-dotfiles/
 ```
 
 ### Preview
-![alt tag](https://raw.githubusercontent.com/moraisaugusto/server-dotfiles/master/screenshot-1.png)
+![alt tag](https://raw.githubusercontent.com/moraisaugusto/server-dotfiles/master/images/screenshot-1.png)
 ![alt tag](https://raw.githubusercontent.com/moraisaugusto/server-dotfiles/master/screenshot-2.png)
-![alt tag](https://raw.githubusercontent.com/moraisaugusto/server-dotfiles/master/screenshot-3.png)
 
