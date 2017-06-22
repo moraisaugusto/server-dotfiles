@@ -94,19 +94,20 @@ main() {
     # vars
     DOTFILES=$HOME/.server-dotfiles
 
-    (git clone -q https://github.com/moraisaugusto/server-dotfiles.git $HOME/.server-dotfiles) & loaderSpinner "
-    Clonning server dotfiles..."
+    # (git clone -q https://github.com/moraisaugusto/server-dotfiles.git $HOME/.server-dotfiles) & loaderSpinner " Clonning server dotfiles..."
+
+    (sleep 2) & loaderSpinner "
 
     # creating symlinks
-    linkables=$( find -H "$DOTFILES" -name '*.symlink' )
-    for file in $linkables ; do
-        target="$HOME/.$( basename $file ".symlink" )"
-        checkSymlink $file $target
-    done
+    # linkables=$( find -H "$DOTFILES" -name '*.symlink' )
+    # for file in $linkables ; do
+    #     target="$HOME/.$( basename $file ".symlink" )"
+    #     checkSymlink $file $target
+    # done
 
-    printf "${BOLD}${GREEN}\t [OK] ${NORMAL} Creating symlinks...${NORMAL}\n"
+    # printf "${BOLD}${GREEN}\t [OK] ${NORMAL} Creating symlinks...${NORMAL}\n"
 
-    echo "$DOTFILES/scripts/server-status-2.sh" >> $HOME/.bashrc
+    # echo "$DOTFILES/scripts/server-status-2.sh" >> $HOME/.bashrc
 
 }
 
