@@ -83,7 +83,7 @@ loaderSpinner()
         printf "\t [%c%c] $1" "$spinstr" "$spinstr"
         local spinstr=$temp${spinstr%"$temp"}
         sleep $delay
-        printf '\b%.0s' {1..60}
+        printf '\b%.0s' {1..80}
     done
     printf "\t${BOLD}${GREEN} [OK] ${NORMAL}$1\n"
 }
