@@ -1,0 +1,76 @@
+"
+" Basic Settings for Vim in Server Env.
+" @autor: Augusto Morais <aflavio@gmail.com>
+"
+set autoread " detect when a file is changed
+
+" set a map leader for more key combos¬
+let mapleader = ','
+let g:mapleader = ','
+
+" switch syntax highlighting on
+syntax on
+
+" remap esc
+inoremap jk <esc>
+
+" remove extra whitespace
+nmap <leader><space> :%s/\s\+<cr>
+
+" close the current buffer¬
+noremap <C-x> :q<cr>¬
+
+" shortcut to save
+nmap <leader>, :w<cr>
+
+" set paste toggle
+set pastetoggle=<F6>
+
+" edit ~/.vimrc
+map <leader>ev :e! ~/.vimrc<cr>
+
+" edit gitconfig
+map <leader>eg :e! ~/.gitconfig<cr>
+
+" clear highlighted search
+noremap <space> :set hlsearch! hlsearch?<cr>
+
+" toggle invisible characters
+"set invlist
+"set listchars=tab:▸\ ,eol:,trail:⋅,extends:❯,precedes:❮
+highlight SpecialKey ctermbg=none " make the highlighting of tabs less annoying
+set showbreak=↪
+nmap <leader>l :set list!<cr>
+
+" switch between current and last buffer
+nmap <leader>. <c-^>
+
+" enable . command in visual mode
+vnoremap . :normal .<cr>
+
+" navigate between windows
+map <silent> <C-h> :call WinMove('h')<cr>
+map <silent> <C-j> :call WinMove('j')<cr>
+map <silent> <C-k> :call WinMove('k')<cr>
+map <silent> <C-l> :call WinMove('l')<cr>
+
+" toggle cursor line
+nnoremap <leader>i :set cursorline!<cr>
+
+" scroll the viewport faster
+nnoremap <C-e> 4<C-e>
+nnoremap <C-y> 4<C-y>
+
+" moving up and down work as you would expect
+nnoremap <silent> j gj
+nnoremap <silent> k gk
+nnoremap <silent> ^ g^
+nnoremap <silent> $ g$
+
+" Move lines
+nnoremap <M-j> :m .+1<CR>==
+nnoremap <M-k> :m .-2<CR>==
+inoremap <M-k> <Esc>:m .-2<CR>==gi
+inoremap <M-j> <Esc>:m .+1<CR>==gi
+vnoremap <M-j> :m '>+1<CR>gv=gv
+ 
