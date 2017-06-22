@@ -92,9 +92,9 @@ loaderSpinner()
 main() {
     printf "\n${BOLD}[INSTALLING] ${NORMAL}\n"
     # vars
-    DOTFILES=$HOME/server-dotfiles
+    DOTFILES=$HOME/.server-dotfiles
 
-    (git clone -q https://github.com/moraisaugusto/server-dotfiles.git $HOME/server-dotfiles) & loaderSpinner "
+    (git clone -q https://github.com/moraisaugusto/server-dotfiles.git $HOME/.server-dotfiles) & loaderSpinner "
     Clonning server dotfiles..."
 
     # creating symlinks
