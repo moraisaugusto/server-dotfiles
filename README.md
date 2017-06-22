@@ -22,6 +22,6 @@ bash -c "$(wget --no-check-certificate https://raw.githubusercontent.com/moraisa
 ```
 
 ### Preview
-![Animation](https://raw.githubusercontent.com/moraisaugusto/server-dotfiles/master/animation.gif)
+![Animation](https://raw.githubusercontent.com/moraisaugusto/server-dotfiles/master/images/animation.gif)
 ![Screenshot](https://raw.githubusercontent.com/moraisaugusto/server-dotfiles/master/images/screenshot-1.png)
 
