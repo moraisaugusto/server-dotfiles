@@ -106,6 +106,8 @@ main() {
 
     printf "${BOLD}${GREEN}\t [OK] ${NORMAL} Creating symlinks...${NORMAL}\n"
 
+    echo "$DOTFILES/scripts/server-status-2.sh" >> $HOME/.bashrc
+
 }
 
 
