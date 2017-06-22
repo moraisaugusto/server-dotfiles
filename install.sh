@@ -104,7 +104,9 @@ main() {
         checkSymlink $file $target
     done
 
+    # updating .bashrc
     echo "$DOTFILES/scripts/server-status-2.sh" >> $HOME/.bashrc
+    source $HOME/.bashrc
 
     printf "${BOLD}${GREEN}\t [OK] ${NORMAL} Creating symlinks...${NORMAL}\n"
 }
