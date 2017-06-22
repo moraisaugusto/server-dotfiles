@@ -16,6 +16,6 @@ bash -c "$(wget https://raw.githubusercontent.com/moraisaugusto/server-dotfiles/
 ```
 
 ### Preview
-![alt tag](https://raw.githubusercontent.com/moraisaugusto/server-dotfiles/master/images/screenshot-1.png)
-![alt tag](https://raw.githubusercontent.com/moraisaugusto/server-dotfiles/master/screenshot-2.png)
+![Animation](https://raw.githubusercontent.com/moraisaugusto/server-dotfiles/master/animation.gif)
+![Screenshot](https://raw.githubusercontent.com/moraisaugusto/server-dotfiles/master/images/screenshot-1.png)
 
