@@ -11,8 +11,14 @@ Dotfiles for Linux Server
 * Python 3
 
 ### Instalation
+
 ```shell
 bash -c "$(wget https://raw.githubusercontent.com/moraisaugusto/server-dotfiles/master/install.sh -O -)"
+```
+
+_without certificate_
+```shell
+bash -c "$(wget --no-check-certificate https://raw.githubusercontent.com/moraisaugusto/server-dotfiles/master/install.sh -O -)"
 ```
 
 ### Preview
