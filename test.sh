@@ -15,4 +15,5 @@ loaderSpinner()
     printf "\t${BOLD}${GREEN} [OK] ${NORMAL}$1\n"
 }
 
-(sleep 2) & loaderSpinner "Clonning server dotfiles... "
+
+    (sleep 2) & loaderSpinner "Clonning server dotfiles... "
